@@ -1,5 +1,5 @@
 {% set name = "numba4jax" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 
 
@@ -9,14 +9,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/numba4jax-{{ version }}.tar.gz
-  sha256: ff5fe867c55337b945cb9330fbdaf43f9b9a2a572d43d8f35cfd3e935488109d
+  sha256: 6b79d2832eb677a5dab21b3581a05c08fb9737b6a17c833a3710be57df9c57d2
 
 build:
   number: 0
   noarch: python
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
-  script: 
+  script:
     - {{ PYTHON }} -m pip install --no-deps --ignore-installed --no-cache-dir -vvv .
 
 requirements:
