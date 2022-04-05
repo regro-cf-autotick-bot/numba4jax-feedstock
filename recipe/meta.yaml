@@ -1,5 +1,5 @@
 {% set name = "numba4jax" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.10" %}
 
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/numba4jax-{{ version }}.tar.gz
-  sha256: ba22fe8f5f1def770ba774edc30dce5324aa7d35ca792404208e93a3c0a5b65e
+  sha256: 658d198eb5d2d1ad5147d4ede9b7c3b8cf85140e0bb72de8a22f743fe021aa19
 
 build:
   number: 0
