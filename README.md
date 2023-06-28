@@ -1,11 +1,11 @@
-About numba4jax
-===============
+About numba4jax-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/numba4jax-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/PhilipVinc/numba4jax
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/numba4jax-feedstock/blob/main/LICENSE.txt)
 
 Summary: Usa numba in jax-compiled kernels.
 
