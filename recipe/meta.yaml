@@ -23,9 +23,8 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - setuptools >=45
-    - setuptools_scm >=3.4
-    - toml
+    - hatchling >=1.10
+    - hatch-vcs >=0.3
   run:
     - cffi >=1.12
     - jax >0.2.16
