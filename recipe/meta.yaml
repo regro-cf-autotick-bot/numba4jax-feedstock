@@ -1,5 +1,5 @@
 {% set name = "numba4jax" %}
-{% set version = "0.0.10.post1" %}
+{% set version = "0.0.10.post3" %}
 
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/numba4jax-{{ version }}.tar.gz
-  sha256: 887b71811fd0f35eec3d0217267fdc9d919bf252783ec9de5d53ffd4420c0350
+  sha256: 346b89d30df362822d76ac20855a07fecdd8b618dd0315cf457a16f3f09430b3
 
 build:
   number: 0
@@ -23,9 +23,8 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - setuptools >=45
-    - setuptools_scm >=3.4
-    - toml
+    - hatchling >=1.10
+    - hatch-vcs >=0.3
   run:
     - cffi >=1.12
     - jax >0.2.16
