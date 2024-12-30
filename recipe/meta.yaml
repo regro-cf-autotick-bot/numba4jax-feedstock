@@ -8,11 +8,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/numba4jax-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/numba4jax-{{ version }}.tar.gz
   sha256: a16911c3d3d1ac72cd6d9fdd003c285b4b86fe365ca072b8187c228c5011630f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
@@ -22,7 +22,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - hatchling >=1.10
     - hatch-vcs >=0.3
   run:
@@ -31,9 +31,11 @@ requirements:
     - jaxlib >0.1.70
     - numba >=0.52.0,!=0.54.0
     - numpy ~=1.18
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - numba4jax
   # not active right now because the recipe has less restrictive pins
